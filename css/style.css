@@ -84,6 +84,16 @@ body {
     margin-left: 20px;
 }
 
+.path_badge {
+    padding: 4px 10px;
+    border-radius: 50px;
+    background-color: hsl(215, 82%, 40%);
+}
+
+.online_students_counter {
+    font-size: 30px;
+}
+
 
 
 
