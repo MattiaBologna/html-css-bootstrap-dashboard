@@ -1,6 +1,10 @@
 /************************
-    LAYOUT
+    RESET
 ************************/
+
+:root {
+    
+}
 
 ul, ol, menu {
     list-style: none;
@@ -8,6 +12,11 @@ ul, ol, menu {
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
 }
 
 /************************
@@ -38,7 +47,14 @@ img {
 
 .sidebar {
     width: 70px;
+    background: rgb(20,42,64);
+    background: linear-gradient(50deg, rgba(20,42,64,1) 75%, rgba(5,30,52,1) 75%);
 }
+
+.sidebar_links {
+    height: 100%;
+}
+
 
 
 
@@ -74,9 +90,9 @@ img {
     background-color: blue;
 } */
 
-.debug .sidebar {
+/* .debug .sidebar {
     background-color: red;
-}
+} */
 
 .debug .main_content {
     background-color: orange;
