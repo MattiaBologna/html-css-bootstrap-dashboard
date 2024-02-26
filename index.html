@@ -8,6 +8,9 @@
     <title>Bootstrap Dashboard</title>
 
     <script src="https://kit.fontawesome.com/30a5d231e3.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -53,7 +56,7 @@
             <!-- SIDEBAR -->
 
             <div class="sidebar">
-                <ul class="sidebar_links d-flex flex-column py-3 text-white gap-3">
+                <ul class="sidebar_links d-flex flex-column py-3 text-white gap-3 align-items-center">
                     <li class="sidebar_link d-flex gap-2 text-start">
                         <i class="fa-solid fa-house"></i>
                         <a class="d-none d-lg-block" href="#">Home</a>
@@ -64,7 +67,7 @@
                     </li>
                     <li class="sidebar_link d-flex gap-2 align-items-center">
                         <i class="fa-solid fa-signal"></i>       
-                        <a class="d-none d-lg-block" href="#">signals</a>
+                        <a class="d-none d-lg-block" href="#">Signals</a>
                     </li>
                     <li class="sidebar_link d-flex gap-2 align-items-end flex-grow-1">
                         <i class="fa-solid fa-gear"></i>
@@ -73,8 +76,33 @@
                 </ul>
             </div>
 
-            <div class="main_content flex-grow-1">
-                Main content
+            <div class="main_content flex-grow-1 d-flex flex-column">
+                
+                <!-- MAIN TOP  -->
+
+                <div class="main_top d-flex flex-column flex-sm-row row-cols-3 align-items-sm-center text-white p-2 gap-3">
+                    <div class="new_student order-sm-3 d-flex align-items-center">
+                        <p>Nuovo Studente</p>
+                        <button class="new_student_button">+</button>
+                    </div>
+                    <div class="main_top_path d-flex">
+                        <p>Boolean</p>
+                        <div class="path-badge">Piano blaze</div>
+                        <div class="path-badge">3 App</div>
+                        <div class="path-badge">+</div>
+                    </div>
+                    <div class="online_students">
+                        <p>Studenti online negli ultimi 30 min</p>
+                        <div class="online_students_counter">125</div>
+                    </div>
+                </div>
+
+                <!-- MAIN BOTTOM -->
+
+                <div class="main_bottom flex-grow-1">
+                    Main bottom
+                </div>
+
             </div>
 
         </main>

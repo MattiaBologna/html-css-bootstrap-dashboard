@@ -3,11 +3,13 @@
 ************************/
 
 :root {
-    
+    --light-blue: #1B72E8;
 }
 
 ul, ol, menu {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -17,6 +19,16 @@ img {
 a {
     color: currentColor;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /************************
@@ -37,11 +49,6 @@ a {
     width: 30px;
 }
 
-/* Main */
-
-.page__content {
-    height: calc(100vh - 70px);
-}
 
 /* Sidebar */
 
@@ -56,6 +63,26 @@ a {
 }
 
 
+/* Main */
+
+.page__content {
+    height: calc(100vh - 70px);
+}
+
+.main_top {
+    min-height: 140px;
+    background-color: var(--light-blue);
+}
+
+.new_student_button {
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: currentColor;
+    border-radius: 10px;
+    margin-left: 20px;
+}
 
 
 
@@ -65,7 +92,6 @@ a {
 ************************/
 
 @media (min-width: 576px) {
-
 }
 
 
@@ -86,14 +112,8 @@ a {
     DEBUG
 ************************/
 
-/* .debug .page__navbar {
-    background-color: blue;
-} */
 
-/* .debug .sidebar {
+.debug .main_bottom {
     background-color: red;
-} */
-
-.debug .main_content {
-    background-color: orange;
 }
+
