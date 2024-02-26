@@ -16,15 +16,39 @@
 
     <div id="app" class="d-flex flex-column">
 
-        <!-- HEADER / NAVBAR -->
+        <!-- NAVBAR / HEADER -->
         
-        <nav class="page__navbar">
-            Header
+        <nav class="page__navbar d-flex gap-3 px-2 align-items-center">
+            <div class="logos">
+                <div class="logo_mobile d-lg-none">
+                    <img src="./img/mobile-logo.png" alt="">
+                </div>
+                <div class="logo d-none d-lg-flex">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="searchbar flex-grow-1">
+                <input class="w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
+            <ul class="navbar_icons d-flex gap-2 p-0 m-0">
+                <li class="icon navbar_icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                </li>
+                <li class="icon navbar_icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </li>
+                <li class="icon navbar_icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </li>
+                <li class="icon navbar_icon">
+                    <i class="fa-solid fa-bell"></i>
+                </li>
+            </ul>
         </nav>
 
         <!-- MAIN -->
 
-        <main class="page__content d-flex flex-grow-1">
+        <main class="page__content d-flex">
 
             <!-- SIDEBAR -->
 
