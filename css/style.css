@@ -1,0 +1,50 @@
+/************************
+    LAYOUT
+************************/
+
+/* Navbar */
+
+.page__navbar {
+    width: 100%;
+    height: 70px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 70px;
+}
+
+
+
+
+
+/************************
+    MEDIA QUERY
+************************/
+
+@media (min-width: 992px) {
+    .sidebar {
+        width: 150px;
+    }
+}
+
+
+
+
+
+/************************
+    DEBUG
+************************/
+
+.debug .page__navbar {
+    background-color: blue;
+}
+
+.debug .sidebar {
+    background-color: red;
+}
+
+.debug .main_content {
+    background-color: orange;
+}
