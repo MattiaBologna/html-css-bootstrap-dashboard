@@ -155,6 +155,15 @@ body {
     text-decoration: underline;
 }
 
+/* OFFCANVAS */
+
+.offcanvas-body input {
+    width: 100%;
+    border-radius: 5px;
+    border-color: #00000022;
+    outline-color: #00000022;
+}
+
 
 /************************
     MEDIA QUERY

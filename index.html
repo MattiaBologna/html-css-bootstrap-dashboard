@@ -91,27 +91,62 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-6">Nome</div>
-                                            <div class="col-6">Cognome</div>
-                                            <div class="col-6">Email</div>
-                                            <div class="col-6">Password</div>
-                                            <div class="col-6">Indirizzo Email</div>
-                                            <div class="col-6">Password</div>
-                                            <div class="col-12">Password</div>
-                                            <div class="col-6">Città</div>
-                                            <div class="col-4">Stato</div>
-                                            <div class="col-2">CAP</div>
-                                            <div class="col-12">Foto</div>
-                                            <div class="go_on">
-                                                <input type="checkbox"> 
-                                                <p>Seleziona per proseguire</p>
+                                    <form action="">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="fname">Nome</label>
+                                                    <input type="text" id="fname" name="fname">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="lname">Cognome</label>
+                                                    <input type="text" id="lname" name="lname">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="email">Mail</label>
+                                                    <input type="email" id="email" name="email">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" id="password" name="password">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="email">Mail</label>
+                                                    <input type="email" id="email" name="email">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" id="password" name="password">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="address">Indirizzo</label>
+                                                    <input type="text" id="address" name="address">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="city">Città</label>
+                                                    <input type="text" id="city" name="city">
+                                                </div>
+                                                <select class="col-4" name="state" id="state">
+                                                    <option value="default">Scegli...</option>
+                                                    <option value="Italy">Italia</option>
+                                                </select>
+                                                <div class="col-2">
+                                                    <label for="cap">CAP</label>
+                                                    <input type="text" id="cap" name="cap">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="pic">Foto</label>
+                                                    <input type="file" id="pic" name="pic">
+                                                </div>
+                                                <div class="go_on d-flex">
+                                                    <input type="checkbox"> 
+                                                    <p>Seleziona per proseguire</p>
+                                                </div>
+                                                <button type="submit" class="button">Salva</button>
+                                                <button class="button">Svuota</button>
                                             </div>
-                                            <div class="button">Salva</div>
-                                            <div class="button">Svuota</div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                     </div>
