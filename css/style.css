@@ -72,7 +72,6 @@ body {
 }
 
 .main_top {
-    min-height: 140px;
     background-color: var(--light-blue);
 }
 
@@ -104,6 +103,10 @@ body {
 
 .main_bottom .col-100 > * {
     margin-top: 20px;
+}
+
+.main_bottom .col-100:last-child {
+    margin-bottom: 20px;
 }
 
 .next_classes_legend .row {
@@ -139,6 +142,17 @@ body {
 
 .todo .row:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* GRAPH */
+
+.graph_card {
+    max-width: 100%;
+}
+
+.graph_card a {
+    color: #0D6EFD;
+    text-decoration: underline;
 }
 
 
