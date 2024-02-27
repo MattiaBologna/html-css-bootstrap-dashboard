@@ -102,6 +102,35 @@ body {
     margin-top: 20px;
 }
 
+.next_classes_legend .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+}
+
+.class_code_icon {
+    background-color: #F26551;
+    color: white;
+    padding: 7px 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.class_status_badge {
+    padding: 10px 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.badge_done {
+    background-color: #198754;
+}
+
+.class_actions > *{
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
 
 /************************
     MEDIA QUERY
