@@ -30,7 +30,8 @@
                     <img src="./img/logo.svg" alt="">
                 </div>
             </div>
-            <div class="searchbar flex-grow-1">
+            <div class="searchbar flex-grow-1 position-relative">
+                <i class="fa-solid fa-magnifying-glass position-absolute"></i>
                 <input class="w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
             <ul class="navbar_icons d-flex gap-2 p-0 m-0">
@@ -85,6 +86,8 @@
                         <p>Nuovo Studente</p>
                         <button class="btn btn-primary new_student_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
+                            <!-- OFFCANVAS -->
+
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -126,24 +129,29 @@
                                                     <label for="city">Città</label>
                                                     <input type="text" id="city" name="city">
                                                 </div>
-                                                <select class="col-4" name="state" id="state">
-                                                    <option value="default">Scegli...</option>
-                                                    <option value="Italy">Italia</option>
-                                                </select>
+                                                <div class="col-4 d-flex flex-column">
+                                                    <label for="state">Stato</label>
+                                                    <select name="state" id="state">
+                                                        <option value="default">Scegli...</option>
+                                                        <option value="Italy">Italia</option>
+                                                    </select>
+                                                </div>
                                                 <div class="col-2">
                                                     <label for="cap">CAP</label>
                                                     <input type="text" id="cap" name="cap">
                                                 </div>
-                                                <div class="col-12">
+                                                <div class="col-12 my-2 student_pic">
                                                     <label for="pic">Foto</label>
                                                     <input type="file" id="pic" name="pic">
                                                 </div>
-                                                <div class="go_on d-flex">
+                                                <div class="col-12 go_on d-flex my-2">
                                                     <input type="checkbox"> 
                                                     <p>Seleziona per proseguire</p>
                                                 </div>
-                                                <button type="submit" class="button">Salva</button>
-                                                <button class="button">Svuota</button>
+                                                <div class="offcanvas_buttons">
+                                                    <button type="submit" class="button blue_button">Salva</button>
+                                                    <button type="reset" class="button yellow_button">Svuota</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -310,7 +318,7 @@
                                               </h2>
                                               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
                                                 </div>
                                               </div>
                                             </div>
@@ -322,7 +330,7 @@
                                               </h2>
                                               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
                                                 </div>
                                               </div>
                                             </div>
